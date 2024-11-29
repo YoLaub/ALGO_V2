@@ -40,13 +40,28 @@
 
     // Tableau des notes obtenues
     const notes = [8.75, 14, 13, 5.5, 9, 17, 11.25];
+    var lenghtArray = notes.length;
 
     /*
-     * Ici le commentaire sur la fonction average...
+     Cette fonction additionne les notes entre elles et divise le résultat par le nombre d'occurrences.
      */
 
     function average(noteArray) {
+        let newElement = 0 ;
+        let average = 0;
+
         // CODE HERE !
+        noteArray.forEach(element => 
+        newElement += element
+    )
+
+    average = newElement/lenghtArray;
+
+
+
+    console.log(Math.round(average*100)/100);
+
+    alert("Votre moyenne est de " + Math.round(average*100)/100)
         
     }
 

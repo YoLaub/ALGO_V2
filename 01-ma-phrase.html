@@ -56,14 +56,28 @@
 
 
     function analyze() {
-        let string = document.getElementById("sentence").value;
-        let arrayString = Array.from(string);
-        let ArrayOfElement = [];
+
+        //récupération des la phrase d'entrée
+        let string = document.getElementById("sentence").value; 
+
+        //création du tableau
+        let arrayString = Array.from(string); 
+
+        //initialisation de la variable
+        let ArrayOfElement = []; 
         let charactereMin = 5;
+
+         //Ajout du nombre de charactère
         let lengthOfArray = ArrayOfElement.push(arrayString.length);
-        let fifthCharactere =  ArrayOfElement.push(arrayString[4]);
-        let firstTree = ArrayOfElement.push(arrayString.slice(0,3));
-        let lastTree = ArrayOfElement.push(arrayString.slice((arrayString.length - 3), (arrayString.length + 1)));
+
+        //Ajout du 5ème charatère
+        let fifthCharactere =  ArrayOfElement.push(arrayString[4]); 
+
+        //Ajout des 3 premiers charactères
+        let firstTree = ArrayOfElement.push(arrayString.slice(0,3)); 
+
+        //Ajout des 3 derniers charactères
+        let lastTree = ArrayOfElement.push(arrayString.slice((arrayString.length - 3), (arrayString.length + 1))); 
         
         
 
@@ -73,7 +87,6 @@
             alert(ArrayOfElement);
         }
         
-       
     }
 
 </script>
